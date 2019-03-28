@@ -53,9 +53,6 @@ class Withdrawal extends Transaction {
     return -this.amount;
   }
   check() {
-    // if (this.value > this.account.balance) {
-    //   return false;
-    // }
     if (this.amount > this.account.balance) {
       return false;
     }
